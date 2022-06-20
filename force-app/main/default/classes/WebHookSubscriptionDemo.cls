@@ -12,7 +12,7 @@ global with sharing class WebHookSubscriptionDemo {
         try{
             RestRequest request = RestContext.request;
             RestResponse response = RestContext.response;
-            System.debug('Request ' + request);
+            System.debug('Request ' + request.requestBody.toString());
         }catch(Exception e){
             System.debug('Exception happened : ' + e.getMessage());
         }
